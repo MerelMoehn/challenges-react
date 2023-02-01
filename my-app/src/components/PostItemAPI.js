@@ -1,7 +1,7 @@
 import React from 'react';
 import css from "./css/PostItem.module.css";
 
-function PostItem(props) {
+function PostItemAPI(props) {
     return (
         props.savedPosts.map(post => {
             const {id, type, user, webformatURL, tags} = post
@@ -16,4 +16,4 @@ function PostItem(props) {
     )
 }
 
-export default PostItem
+export default PostItemAPI
